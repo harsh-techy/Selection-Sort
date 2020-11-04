@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+void display(int a[10],int n)
+{
+    for(int i=0;i<n;i++)
+     {   printf("%d ",a[i]); }
+}
+
+int main()
+{
+  int a[10],n,temp=0,min;
+  printf("\n=============================================================\n");
+    printf("                    SELECTION SORTING                        ");
+  printf("\nNAME : TANVEER AHMED ANSARI\nROLL NO. : 1901610100218\n");
+  printf("\nEnter Array size :");
+  scanf("%d",&n);
+  printf(" Enter Array Elements:\n");
+  for(int i=0;i<n;i++)
+  {
+      printf(" a%d:",i+1);
+      scanf("%d",&a[i]);
+  }
+  printf("\nUnsorted Array : ");
+  display(a,n);
+  for(int i=0;i<n;i++)
+   {  
+      min=i;
+      for(int j=i+1;j<n;j++)
+       if(a[min]>a[j])
+       {
+        temp = a[min];
+        a[min] = a[j];
+        a[j] = temp;
+       } 
+   }
+  printf("\nSorted Array   : ");
+  display(a,n);
+  printf("\n=============================================================\n");
+  return 0;
+}
