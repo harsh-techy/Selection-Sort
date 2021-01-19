@@ -11,7 +11,6 @@ int main()
   int a[10],n,temp=0,min;
   printf("\n=============================================================\n");
     printf("                    SELECTION SORTING                        ");
-  printf("\nNAME : TANVEER AHMED ANSARI\nROLL NO. : 1901610100218\n");
   printf("\nEnter Array size :");
   scanf("%d",&n);
   printf(" Enter Array Elements:\n");
